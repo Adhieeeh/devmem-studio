@@ -4,7 +4,7 @@ DevMem is a low-level memory allocation and garbage collection simulator enginee
 
 ##  Technical Architecture Overview
 *  **Dynamic Heap Allocation (`malloc`):** Searches contiguous page blocks in virtual RAM arrays to allocate dynamic memory structures safely.
-* ✂️ **Reference Counting & Pointer Severing:** Simulates stack root pointer dereferencing (`variable = null`), identifying unreachable heap objects.
+*  **Reference Counting & Pointer Severing:** Simulates stack root pointer dereferencing (`variable = null`), identifying unreachable heap objects.
 * 🧹 **Mark-and-Sweep Garbage Collection:** Executes a two-phase GC sweep loop to free unreferenced pages and update memory registry telemetry.
 
 ## ⚙️ Running Instructions
