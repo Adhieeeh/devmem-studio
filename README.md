@@ -1,5 +1,12 @@
-# Vue 3 + Vite
+# 🧠 DevMem — Virtual Memory Allocator & Garbage Collection Studio (Vue 3)
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+DevMem is a low-level memory allocation and garbage collection simulator engineered with Vue 3 (Composition API `<script setup>`). It maps a 64 KB Virtual Heap across 32 memory pages, simulates dynamic stack pointer references, tracks heap fragmentation, and executes Mark-and-Sweep Garbage Collection sweeps to reclaim unreferenced memory.
 
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+## ⚡ Technical Architecture Overview
+* 🛠️ **Dynamic Heap Allocation (`malloc`):** Searches contiguous page blocks in virtual RAM arrays to allocate dynamic memory structures safely.
+* ✂️ **Reference Counting & Pointer Severing:** Simulates stack root pointer dereferencing (`variable = null`), identifying unreachable heap objects.
+* 🧹 **Mark-and-Sweep Garbage Collection:** Executes a two-phase GC sweep loop to free unreferenced pages and update memory registry telemetry.
+
+## ⚙️ Running Instructions
+1. Install dependencies: `npm install`
+2. Launch dev workspace: `npm run dev`
