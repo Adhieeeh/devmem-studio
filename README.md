@@ -8,5 +8,4 @@ DevMem is a low-level memory allocation and garbage collection simulator enginee
 *  **Mark-and-Sweep Garbage Collection:** Executes a two-phase GC sweep loop to free unreferenced pages and update memory registry telemetry.
 
 ##  Running Instructions
-1. Install dependencies: `npm install`
 
