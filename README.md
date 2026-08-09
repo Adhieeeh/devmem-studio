@@ -9,4 +9,4 @@ DevMem is a low-level memory allocation and garbage collection simulator enginee
 
 ##  Running Instructions
 1. Install dependencies: `npm install`
-2. Launch dev workspace: `npm run dev`
+
